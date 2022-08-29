@@ -11,7 +11,6 @@
     function tryRemoveFromArray(arr, index) {
         let arr2 = []
         for (let i = 0; i < arr.length; i++) {
-            arr[i] = +prompt()
             arr2.push(arr[i])
         }
         if (index < 0 || index > arr.length) {
@@ -28,7 +27,7 @@
         }
     }
 
-    let arr = new Array(6);
+    let arr = [1, 2, 3, 4, 5, 6];
     let index = 2;
     let arr2 = tryRemoveFromArray(arr, index);
     console.log(arr2);
