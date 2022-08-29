@@ -15,7 +15,7 @@
         height;
         color;
 
-        render() {
+        render(canvas) {
             let ctx = document.getElementById("canvas").getContext("2d");
             ctx.fillStyle = this.color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
@@ -28,6 +28,6 @@
     rectangle.width = 200;
     rectangle.height = 100;
     rectangle.color = "#000000";
-    rectangle.render();
+    rectangle.render(canvas);
 </script>
 </html>
